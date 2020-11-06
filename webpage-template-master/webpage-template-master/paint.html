@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/layout.css" />
+    <title>Paint</title>
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="./index.html">3 layout</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./media.html">Media</a></li>
+            <li><a href="./slider.html">Slider</a></li>
+            <li><a href="./table.html">Table</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./paint.html">Paint</a></li>
+        </ul>
+    </nav>
+
+</header>
+<div class="container">
+    <main class="center column">
+        <div class="container1">
+            <article>
+                <h1>Paint</h1>
+            </article>
+        </div>
+
+            <canvas id="draw" width="800" height="300"></canvas>
+            <p></p>
+    </main>
+    <div class="left column">
+<h3>Инструменты</h3>
+        <b> Кисть <br></b>
+            <div  class="toggle-brush">
+                <input type="radio" value="1" checked = "checked" name="mybrush"/><span1>1px</span1> <br>
+                <input type="radio" value="2" name="mybrush"/><span1>2px</span1><br>
+                <input type="radio" value="5" name="mybrush"/><span1>5px</span1><br>
+                <input type="radio" value="10" name="mybrush"/><span1>10px</span1><br>
+            </div>
+            <br><b> Цвет <br></b>
+            <div>
+                <input type="color" value = "#001414" id="mycolor" /> <br>
+            </div>
+            <br><button onclick="clearRect()"><b>Очистить</b></button> <br>
+        </div>
+    </div>
+<script src="./assets/scripts/paint.js"></script>
+
+</body>
+</html>
